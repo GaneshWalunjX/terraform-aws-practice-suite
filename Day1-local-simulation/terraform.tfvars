@@ -1,0 +1,1 @@
+file_content = "Hello Ganesh! Terraform is now under your control."
