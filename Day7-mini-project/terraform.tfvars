@@ -6,6 +6,7 @@ subnet_name  = "my-public-subnet"
 
 instance_type = "t2.micro"
 ec2_name      = "my-ec2-instance"
+ami_id = "ami-0e6329e222e662a52"
 
 bucket_name = "my-terraform-demo-bucket-12345"
 
