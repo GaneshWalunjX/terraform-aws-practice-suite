@@ -1,14 +1,14 @@
 variable "cidr_block" {
-  type        = string
+  type            = string
   description = "CIDR block for the VPC"
 }
 
 variable "vpc_name" {
-  type        = string
+  type            = string
   description = "Name tag for the VPC"
 }
 
 variable "subnet_name" {
-  type        = string
+  type            = string
   description = "Name tag for the subnet"
 }
