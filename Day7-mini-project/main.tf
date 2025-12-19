@@ -7,22 +7,22 @@ module "ec2" {
 }
 
 module "vpc" {
-  source     = "./modules/vpc"
-  cidr_block = var.vpc_cidr
-  vpc_name   = var.vpc_name
+  source            = "./modules/vpc"
+  cidr_block      = var.vpc_cidr
+  vpc_name      = var.vpc_name
   subnet_name = var.subnet_name
 }
 
 
 module "s3" {
-  source      = "./modules/s3"
+  source            = "./modules/s3"
   bucket_name = var.bucket_name
-  tags        = var.s3_tags
+  tags                = var.s3_tags
 }
 
 module "dynamodb" {
-  source     = "./modules/dynamodb"
+  source         = "./modules/dynamodb"
   table_name = var.table_name
-  hash_key   = var.hash_key
-  tags       = var.dynamodb_tags
+  hash_key     = var.hash_key
+  tags             = var.dynamodb_tags
 }
