@@ -12,7 +12,7 @@ bucket_name  = "my-terraform-demo-bucket-12345"
 
 s3_tags = {
   Project   = "TerraformDemo"
-  Owner   = "User"
+  Owner    = "User"
 }
 
 table_name = "MyDemoTable"
