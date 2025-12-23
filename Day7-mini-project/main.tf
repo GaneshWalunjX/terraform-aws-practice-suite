@@ -1,9 +1,9 @@
 module "ec2" {
-  source        = "./modules/ec2"
-  subnet_id     = module.vpc.public_subnet_id
+  source            = "./modules/ec2"
+  subnet_id       = module.vpc.public_subnet_id
   instance_type = var.instance_type
-  ec2_name      = var.ec2_name
-  ami_id        = var.ami_id
+  ec2_name       = var.ec2_name
+  ami_id            = var.ami_id
 }
 
 module "vpc" {
