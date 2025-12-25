@@ -3,7 +3,7 @@ module "ec2" {
   subnet_id       = module.vpc.public_subnet_id
   instance_type = var.instance_type
   ec2_name       = var.ec2_name
-  ami_id            = var.ami_id
+  ami_id             = var.ami_id
 }
 
 module "vpc" {
